@@ -9,24 +9,24 @@ var participations = [
 ];
 
 var members = [
-    { "username":"markatos",        "info":"Founder member" },
-    { "username":"harryman",        "info":"Founder member" },
-    { "username":"papamano",        "info":"Founder member" },
-    { "username":"georgepant",      "info":"Founder member" },
-    { "username":"giannose",        "info":"Founder member" },
-    { "username":"mirtiagk",        "info":"Founder member" },
-    { "username":"pbekos",          "info":"Founder member" },
-    { "username":"antonis_para",    "info":"Founder member" },
-    { "username":"root",            "info":"Founder member" },
-    { "username":"giorgosioak",     "info":"Founder member" },
-    { "username":"rafail",          "info":"Founder member" },
-    { "username":"asiskos",         "info":"Founder member" },
-    { "username":"eltjonqef",       "info":"Founder member" },
-    { "username":"atheofanous",     "info":"Founder member" },
-    { "username":"johnarakas",      "info":"Founder member" },
-    { "username":"dionkal",         "info":"Founder member" },
-    { "username":"mipach",          "info":"Founder member" },
-    { "username":"georgeleve",      "info":"Founder member" }
+    { "username":"markatos",        "info":"Founding Member" },
+    { "username":"harryman",        "info":"Founding Member" },
+    { "username":"papamano",        "info":"Founding Member" },
+    { "username":"georgepant",      "info":"Founding Member" },
+    { "username":"giannose",        "info":"Founding Member" },
+    { "username":"mirtiagk",        "info":"Founding Member" },
+    { "username":"pbekos",          "info":"Founding Member" },
+    { "username":"antonis_para",    "info":"Founding Member" },
+    { "username":"root",            "info":"Founding Member" },
+    { "username":"giorgosioak",     "info":"Founding Member" },
+    { "username":"rafail",          "info":"Founding Member" },
+    { "username":"asiskos",         "info":"Founding Member" },
+    { "username":"eltjonqef",       "info":"Founding Member" },
+    { "username":"atheofanous",     "info":"Founding Member" },
+    { "username":"johnarakas",      "info":"Founding Member" },
+    { "username":"dionkal",         "info":"Founding Member" },
+    { "username":"mipach",          "info":"Founding Member" },
+    { "username":"georgeleve",      "info":"Founding Member" }
 ];
 
 function activate(key){
