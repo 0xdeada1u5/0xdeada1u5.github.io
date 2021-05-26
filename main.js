@@ -5,6 +5,18 @@ var participations = [
         "date":"2021-01-22",
         "position":"2",
         "score":"8630"
+    },
+    {
+        "name":"ångstromCTF 2021",
+        "date":"2021-04-03",
+        "position":"290",
+        "score":"815"
+    },
+    {
+        "name":"EESTech Challenge Athens 2021",
+        "date":"2021-04-25",
+        "position":"5",
+        "score":"1.512"
     }
 ];
 
@@ -26,7 +38,8 @@ var members = [
     { "username":"johnarakas",      "info":"Founding Member" },
     { "username":"dionkal",         "info":"Founding Member" },
     { "username":"mipach",          "info":"Founding Member" },
-    { "username":"georgeleve",      "info":"Founding Member" }
+    { "username":"georgeleve",      "info":"Founding Member" },
+    { "username":"anasteva",        "info":"Founding Member" }
 ];
 
 function activate(key){
