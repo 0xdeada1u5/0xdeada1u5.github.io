@@ -39,7 +39,8 @@ var members = [
     { "username":"dionkal",         "info":"Founding Member" },
     { "username":"mipach",          "info":"Founding Member" },
     { "username":"georgeleve",      "info":"Founding Member" },
-    { "username":"anasteva",        "info":"Founding Member" }
+    { "username":"anasteva",        "info":"Founding Member" },
+    { "username":"verdic",          "info":"Founding Member" }
 ];
 
 function activate(key){
