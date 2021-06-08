@@ -4,7 +4,7 @@ var participations = [
         "name":"UniWA CTF",
         "date":"2021-01-22",
         "position":"2",
-        "score":"8630"
+        "score":"8.630"
     },
     {
         "name":"ångstromCTF 2021",
@@ -17,6 +17,12 @@ var participations = [
         "date":"2021-04-25",
         "position":"5",
         "score":"1.512"
+    },
+    {
+        "name":"S.H.E.L.L. CTF 2021",
+        "date":"2021-06-05",
+        "position":"84",
+        "score":"1.941"
     }
 ];
 
