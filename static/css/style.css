@@ -34,10 +34,15 @@ html {
     z-index: 100;
 }
 
+
 .card .card-image figure{
     border: 1px solid var(--background-gradient-bottom);
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
+}
+
+.member-image {
+    border-radius: .25rem;
 }
 
 .page-header {
