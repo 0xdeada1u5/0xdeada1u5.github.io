@@ -1,6 +1,6 @@
 # The URL the site will be built for
-# base_url = "https://0xdeada1u5.github.io"
-base_url = "http://127.0.0.1"
+base_url = "https://0xdeada1u5.github.io"
+# base_url = "http://127.0.0.1"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
