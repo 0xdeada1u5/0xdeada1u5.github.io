@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block page_title %} Participations {% endblock %}
+
+{% block extra_css %}
+<link rel='stylesheet' type='text/css' media='screen' href='css/sort-table.css'>
+{% endblock %}
+
+{% block navbar_elements %}
+<a class="navbar-item" href="/">
+    Home
+</a>
+<a class="navbar-item" href="/team">
+    Team
+</a>
+<a class="active navbar-item" href="/participations">
+    Participations
+</a>
+<a class="navbar-item" href="/contact">
+    Contact
+</a>
+{% endblock %}
+
+{% block content %}
+<div class="container py-6">
+    <h1 class="title has-text-centered">Participations</h1>
+    <table class="table is-fullwidth is-hoverable sort" id="ctf-table">
+        <thead>
+            <tr>
+                <th class="no-sort" data-sort-method='none'></th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="has-text-right"><span style="color: silver;"><i class="fas fa-trophy"></i></span></td>
+                <td>UniWA CTF 2022</td>
+                <td>2</td>
+                <td>12532</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cyber Apocalypse CTF 2022: Intergalactic Chase</td>
+                <td>67</td>
+                <td>9325</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>NahamCon CTF 2022</td>
+                <td>22</td>
+                <td>12197</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>JerseyCTF II</td>
+                <td>78</td>
+                <td>4135</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>HackPack CTF 2022</td>
+                <td>11</td>
+                <td>2389</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Wolverine Security Conference/CTF</td>
+                <td>49</td>
+                <td>3938</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>picoCTF 2022</td>
+                <td>272</td>
+                <td>11600</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>DaVinciCTF 2022</td>
+                <td>63</td>
+                <td>1820</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>UMDCTF 2022</td>
+                <td>178</td>
+                <td>998</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>TSJ CTF 2022</td>
+                <td>48</td>
+                <td>333</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>MHSCTF 2022</td>
+                <td>24</td>
+                <td>1015</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>DefCamp CTF 21-22 Online</td>
+                <td>145</td>
+                <td>243</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>DiceCTF 2022</td>
+                <td>289</td>
+                <td>143</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>X-MAS CTF 2021 Second Weekend</td>
+                <td>101</td>
+                <td>809</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>HTB Uni CTF 2021 - Quals</td>
+                <td>66</td>
+                <td>2625</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>K3RN3LCTF</td>
+                <td>69</td>
+                <td>1271</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>DamCTF 2021</td>
+                <td>210</td>
+                <td>1239</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>DownUnderCTF 2021</td>
+                <td>653</td>
+                <td>900</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>S.H.E.L.L. CTF 2021</td>
+                <td>84</td>
+                <td>1941</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>EESTech Challenge Athens 2021</td>
+                <td>5</td>
+                <td>1512</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>ångstromCTF 2021</td>
+                <td>290</td>
+                <td>815</td>
+            </tr>
+            <tr>
+                <td class="has-text-right"><span style="color: silver;"><i class="fas fa-trophy"></i></span></td>
+                <td>UniWA CTF 2021</td>
+                <td>2</td>
+                <td>8630</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src='js/tablesort.min.js'></script>
+<script src='js/tablesort.number.min.js'></script>
+<script src='js/sort-table.js'></script>
+{% endblock %}

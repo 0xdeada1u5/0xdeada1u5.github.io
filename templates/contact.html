@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block page_title %} Contact us {% endblock %}
+
+{% block navbar_elements %}
+<a class="navbar-item" href="/">
+    Home
+</a>
+<a class="navbar-item" href="/team">
+    Team
+</a>
+<a class="navbar-item" href="/participations">
+    Participations
+</a>
+<a class="active navbar-item" href="/contact">
+    Contact
+</a>
+{% endblock %}
+
+
+{% block content %}
+<div class="container py-6 pb-2 pt-4">
+    <div class="has-text-centered">
+        <div class="columns is-variable is-3 page-header is-centered is-align-items-center mx-auto">
+            <div class="column is-narrow">
+                <figure class="image is-128x128 mx-auto"><img
+                                                             src="img/deadalus.webp"></figure>
+            </div>
+            <div class="media-content column is-narrow">
+                <p class="title is-1">0xdeada1u5</p>
+                <p class="subtitle is-6">CTF Team, CSD UoC</p>
+                <p class="subtitle is-6 pt-2">Email us: <a href="mailto:ctf@csd.uoc.gr">ctf <i>at</i> csd.uoc.gr</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-6 pb-2 pt-4">
+    <div class="has-text-centered">
+        <div class="columns is-variable is-3 page-header is-centered is-align-items-center mx-auto">
+            <div class="column is-narrow">
+                <figure class="image is-128x128 mx-auto"><img
+                                                             src="img/UoC_logo.webp"></figure>
+            </div>
+            <div class="media-content column is-narrow">
+                <p class="title is-1">Τμήμα Επιστήμης Υπολογιστών</p>
+                <p class="subtitle is-6">Πανεπιστήμιο Κρήτης, Πανεπιστημιούπολη Βουτών, TK 70013, Ηράκλειο Κρήτης, Ελλάδα</p>
+                <p class="subtitle is-6 pt-2"><a>https://www.csd.uoc.gr/CSD/index.jsp?content=contact_and_location</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

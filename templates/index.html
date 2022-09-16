@@ -1,453 +1,68 @@
 {% extends "base.html" %}
 
+{% block page_title %} 0xdeadalus {% endblock %}
+
+
+{% block navbar_elements %}
+<a class="active navbar-item" href="/">
+    Home
+</a>
+<a class="navbar-item" href="/team">
+    Team
+</a>
+<a class="navbar-item" href="/participations">
+    Participations
+</a>
+<a class="navbar-item" href="/contact">
+    Contact
+</a>
+{% endblock %}
+
 {% block content %}
-<section class="section pb-2 pt-4">
-    <div class="container">
-        <div class="box has-text-centered">
-            <div class="columns page-header is-gapless is-centered is-align-items-center mx-auto">
-                <div class="column is-narrow">
-                    <figure class="image is-128x128 mx-auto">
-                        <img src="images/deadalus.webp">
-                    </figure>
-                </div>
-                <div class="media-content column">
-                    <p class="title is-1">0xdeada1u5</p>
-                    <p class="subtitle is-6">CTF Team, CSD UoC</p>
-                    <p class="subtitle is-6 pt-2">
-                        0xdeada1u5 was founded in 2021, participating as a team on the UniWA 2021 CTF Challenge.
-                    </p>
-                </div>
-
-            </div>
+<div class="container py-6 px-3 mx-auto">
+    <div class="columns page-header is-variable is-4 is-centered is-align-items-center mx-auto">
+        <div class="column is-narrow">
+            <figure class="image is-128x128 mx-auto">
+                <img src="img/deadalus.webp">
+            </figure>
+        </div>
+        <div class="has-text-centered media-content column is-narrow">
+            <p class="title is-1">0xdeada1u5</p>
+            <p class="subtitle is-6">CTF Team, CSD UoC</p>
         </div>
     </div>
-</section>
-<section class="section py-2">
-    <div class="container">
-        <div class="box">
-            <h1 class="title has-text-centered">Members</h1>
-            <div class="columns is-multiline is-mobile is-centered is-3 member-list">
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/markatos.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">markatos</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/harryman.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">harryman</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/dimspith.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">dimspith</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/verdic.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">verdic</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/johnarakas.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">johnarakas</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/giorgosioak.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">giorgosioak</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/papamano.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">papamano</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/dionkal.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">dionkal</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/georgepant.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">georgepant</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/mirtia.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">mirtia</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/pbekos.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">pbekos</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/antonis_para.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">antonis_para</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/root.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">root</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/rafail.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">rafail</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/asiskos.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">asiskos</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/kokol16.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">kokol16</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/panpas.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">panpas</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/eltjonqef.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">eltjonqef</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/atheofanous.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">atheofanous</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/mipach.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">mipach</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/giannose.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">giannose</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/georgeleve.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">georgeleve</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/anasteva.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">anasteva</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/cast.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">cast</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/theo0k.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">theo0k</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/Restricted.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">Restricted</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/An0nSaiko.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">An0nSaiko</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/Art3mis.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">Art3mis</p>
-                    </div>
-                </div>
-                <div class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
-                    <div class="card-image">
-                        <figure class="image is-64x64 mx-auto">
-                            <img class="member-image" src="images/members/nikosboum.webp">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-6 pt-2">nikosboum</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section py-2">
-    <div class="container">
-        <div class="box">
-            <h1 class="title has-text-centered">Participations</h1>
-            <table class="table is-fullwidth is-hoverable">
-                <thead>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Score</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>UniWA CTF 2022</td>
-                        <td>2</td>
-                        <td>12532</td>
-                    </tr>
-                    <tr>
-                        <td>Cyber Apocalypse CTF 2022: Intergalactic Chase</td>
-                        <td>67</td>
-                        <td>9325</td>
-                    </tr>
-                    <tr>
-                        <td>NahamCon CTF 2022</td>
-                        <td>22</td>
-                        <td>12197</td>
-                    </tr>
-                    <tr>
-                        <th>JerseyCTF II</th>
-                        <td>78</td>
-                        <td>4135</td>
-                    </tr>
-                    <tr>
-                        <th>HackPack CTF 2022</th>
-                        <td>11</td>
-                        <td>2389</td>
-                    </tr>
-                    <tr>
-                        <th>Wolverine Security Conference/CTF</th>
-                        <td>49</td>
-                        <td>3938</td>
-                    </tr>
-                    <tr>
-                        <th>picoCTF 2022</th>
-                        <td>272</td>
-                        <td>11600</td>
-                    </tr>
-                    <tr>
-                        <th>DaVinciCTF 2022</th>
-                        <td>63</td>
-                        <td>1820</td>
-                    </tr>
+    <br />
+    <br />
+    <div class="content">
+        <h3>Η ομάδα</h3>
+        <p>Η ομάδα Δαίδαλος, επίσημα ως 0xdeada1u5 είναι ομάδα του Τμήματος Επιστήμης Υπολογιστών του Πανεπιστημίου
+            Κρήτης.</p>
+        <p>Η ομάδα συστάθηκε ως η επίσημη ομάδα που θα αντιπροσώπευε το Πανεπιστημίου Κρήτης σε διαγωνισμούς Capture
+            the Flag ξεκινώντας από τον ετήσιο διαγωνισμό UniWA 2021 που απευθύνεται αποκλειστικά σε Ελληνικά
+            Πανεπιστήμια και διοργανώνεται από το Πανεπιστήμιο Δυτικής Αττικής.</p>
 
-                    <tr>
-                        <th>UMDCTF 2022</th>
-                        <td>178</td>
-                        <td>998</td>
-                    </tr>
-
-                    <tr>
-                        <th>TSJ CTF 2022</th>
-                        <td>48</td>
-                        <td>333</td>
-                    </tr>
-                    <tr>
-                        <th>MHSCTF 2022</th>
-                        <td>24</td>
-                        <td>1015</td>
-                    </tr>
-                    <tr>
-                        <th>DefCamp CTF 21-22 Online</th>
-                        <td>145</td>
-                        <td>243</td>
-                    </tr>
-                    <tr>
-                        <th>DiceCTF 2022</th>
-                        <td>289</td>
-                        <td>143</td>
-                    </tr>
-                    <tr>
-                        <th>X-MAS CTF 2021 Second Weekend</th>
-                        <td>101</td>
-                        <td>809</td>
-                    </tr>
-                    <tr>
-                        <th>HTB Uni CTF 2021 - Quals</th>
-                        <td>66</td>
-                        <td>2625</td>
-                    </tr>
-                    <tr>
-                        <th>K3RN3LCTF</th>
-                        <td>    69</td>
-                        <td>    1271</td>
-                    </tr>
-                    <tr>
-                        <th>DamCTF 2021</th>
-                        <td>210</td>
-                        <td>1239</td>
-                    </tr>
-                    <tr>
-                        <th>DownUnderCTF 2021</th>
-                        <td>653</td>
-                        <td>900</td>
-                    </tr>
-                    <tr>
-                        <th>S.H.E.L.L. CTF 2021</th>
-                        <td>84</td>
-                        <td>1941</td>
-                    </tr>
-                    <tr>
-                        <th>EESTech Challenge Athens 2021</th>
-                        <td>5</td>
-                        <td>1512</td>
-                    </tr>
-                    <tr>
-                        <th>ångstromCTF 2021</th>
-                        <td>290</td>
-                        <td>815</td>
-                    </tr>
-                    <tr>
-                        <th>UniWA CTF 2021</th>
-                        <td>2</td>
-                        <td>8630</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <h3>Τι είναι οι διαγωνισμοί Capture The Flag</h3>
+        <p>
+            Τα Capture the Flag (CTF) στην ασφάλεια υπολογιστών είναι ασκήσεις, κατά τις οποίες οι
+            συμμετέχοντες προσπαθούν να βρουν μία σειρά από μυστικά (τα οποία ονομάζονται “σημαίες”)
+            που είναι κρυμμένα σε σκόπιμα ευάλωτα προγράμματα ή σε ιστότοπους φτιαγμένους από τους
+            διοργανωτές.</p>
+        <p>
+            Οι διαγωνιζόμενοι παίρνουν τις σημαίες είτε από άλλους ανταγωνιστές (CTF τύπου
+            επίθεσης/άμυνας) είτε από τους διοργανωτές (προκλήσεις τύπου jeopardy) εκμεταλλευόμενοι
+            κενά ασφαλείας σε αυτούς τους ευάλωτους στόχους.
+        </p>
     </div>
-</section>
+    <br />
+    <br />
+    <div class="content">
+        <h3>News</h3>
+        <p></p>
+        <p>FoititikaNea: <a target="_blank" href="https://www.foititikanea.gr/%CF%80%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%AE%CE%BC%CE%B9%CE%B1/%CF%80%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%AE%CE%BC%CE%B9%CE%BF-%CE%BA%CF%81%CE%AE%CF%84%CE%B7%CF%82/27297-%CE%B4%CE%B9%CE%B1%CE%B3%CF%89%CE%BD%CE%B9%CF%83%CE%BC%CF%8C-meta-hacker-cup-%CF%84%CE%BF%CF%85-facebook">Διάκριση φοιτητή του Πανεπιστημίου Κρήτης στο διαγωνισμό "Meta Hacker Cup" του Facebook / 18ος ανάμεσα σε 12 χιλιάδες συμμετέχοντες</a></p>
+        <p>Cretalive: <a target="_blank" href="https://www.cretalive.gr/kriti/argyro-metallio-gia-tmima-toy-panepistimioy-kritis">Αργυρό μετάλλιο για Τμήμα του Πανεπιστημίου Κρήτης </a> της Κατερίνας Μυλωνά </p>
+        <p>UOC Newsletter: <a target="_blank" href="https://www.uoc.gr/files/items/8/8177/newsletter_pk_teyhos_5_february_2021.pdf">Τεύχος 5 - Φεβρουάριος 2021</a> (σελίδα 8)</p>
+        <p>Cretalive: <a target="_blank" href="https://www.cretalive.gr/kriti/daidalos-mia-omada-foititon-poy-mas-prostateyei-apo-toys-epidoxoys-haker">«Δαίδαλος»: μια ομάδα φοιτητών που μάς προστατεύει από τους επίδοξους χάκερ!</a> της Κατερίνας Μυλωνά </p>
+        <p>UOC Newsletter: <a target="_blank" href="https://www.uoc.gr/files/items/8/8177/21_ioulios_22.pdf">Τεύχος 21 - Ιούλιος 2022</a> (σελίδα 12)</p>
+    </div>
+</div>
 {% endblock content %}
-

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block page_title %} Our team {% endblock %}
+
+{% block navbar_elements %}
+<a class="navbar-item" href="/">
+    Home
+</a>
+<a class="active navbar-item" href="/team">
+    Team
+</a>
+<a class="navbar-item" href="/participations">
+    Participations
+</a>
+<a class="navbar-item" href="/contact">
+    Contact
+</a>
+{% endblock %}
+
+
+{% block content %}
+<div class="container py-6">
+    <h1 class="title has-text-centered">Συντονιστές Καθηγητές</h1>
+    <div class="columns is-multiline is-mobile is-centered is-3 member-list">
+        <div
+            class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
+            <div class="card-image">
+                <figure class="image is-96x96 mx-auto"><img class="member-image"
+                                                            src="img/instructor.webp"></figure>
+            </div>
+            <div class="media-content">
+                <p>Prof. Evangelos P. Markatos</p>
+            </div>
+        </div>
+        <div
+            class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
+            <div class="card-image">
+                <figure class="image is-96x96 mx-auto"><img class="member-image"
+                                                            src="img/instructor.webp"></figure>
+            </div>
+            <div class="media-content">
+                <p>Prof. Harry Manifavas</p>
+            </div>
+        </div>
+    </div>
+    <h1 class="title has-text-centered">Η ομάδα</h1>
+    <div class="columns is-multiline is-mobile is-centered is-3 member-list">
+        {% for name, data in section.extra %}
+        <div
+            class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
+            <div class="card-image">
+                <figure class="image is-96x96 mx-auto"><img class="member-image"
+                                                            src={{ data.image }}></figure>
+            </div>
+            <div class="media-content">
+                <p>{{ name }}</p>
+                {% if data.links %}
+                {% for link in data.links %}
+                <a class="mx-1" href="{{ link.url }}"><i class="{{ link.icon }}"></i></a>
+                {% endfor %}                
+                {% endif %}
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

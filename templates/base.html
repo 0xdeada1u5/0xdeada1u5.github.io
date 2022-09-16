@@ -1,77 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>0xdeada1u5 - CSD UoC</title>
-        <link rel="stylesheet" href="/css/bulma.min.css">
-        <link rel="stylesheet" href="/css/style.css">
-        {% block css %} {% endblock %}
-        <script src="/js/feather.min.js"></script>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>{% block page_title %} {% endblock %}</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/bulma.min.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+        {% block extra_css %}
+        {% endblock %}
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-light">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item mx-auto" href="/">
-                        <img alt="Logo" src="/images/deadalus.webp" height="40px" width="40px"/>
-                        <h1 class="title pl-2 is-5">0xdeada1u5</h1>
+                    <a class="navbar-item">
+                        <img src="img/deadalus.webp" width="28" height="28">
+                        <h1 class="title pl-2 is-5"> 0xdeada1u5</h1>
+                    </a>
+                    <a role="button" class="navbar-burger mr-2" aria-label="menu" aria-expanded="false"
+                       data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="navbar-item-list" class="navbar-menu is-active">
-                    <div class="navbar-start has-text-centered">
-                        <a class="navbar-item home-button" href="/">
-                            <span class="icon-text">
-                                <span class="icon">
-                                    <i data-feather="home"></i>
-                                </span>
-                                <span>Home</span>
-                            </span>
-                        </a>
-                        <a class="navbar-item posts-button" href="/posts">
-                            <span class="icon-text">
-                                <span class="icon">
-                                    <i data-feather="rss"></i>
-                                </span>
-                                <span>Posts</span>
-                            </span>
-                        </a>
-                        <a class="navbar-item challenges-button" href="/challenges">
-                            <span class="icon-text">
-                                <span class="icon">
-                                    <i data-feather="flag"></i>
-                                </span>
-                                <span>Challenges</span>
-                            </span>
-                        </a>   
-                    </div>
+                <div id="navbarBasicExample" class="navbar-menu">
                     <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a class="button is-success mx-auto" href="mailto:ctf@csd.uoc.gr">
-                                    <span class="icon-text">
-                                        <span class="icon">
-                                            <i data-feather="mail"></i>
-                                        </span>
-                                        <span>Contact Us</span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
+                        {% block navbar_elements %}
+                        {% endblock %}
                     </div>
                 </div>
             </div>
         </nav>
         {% block content %} {% endblock %}
-        <script src="/js/feather-replace.js"></script>
     </body>
+    {% block extra_js %}
+    {% endblock %}
+    <script src="js/fontawesome.all.min.js"></script>
+    <script src="js/nav-burger.js"></script>
 </html>
