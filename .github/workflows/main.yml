@@ -15,7 +15,9 @@ jobs:
           PAGES_BRANCH: gh-pages
           # Provide personal access token
           TOKEN: ${{ secrets.TOKEN }}
-      - uses: "finnp/create-file-action@master"
-        env:
-          FILE_NAME: "CNAME"
-          FILE_DATA: "0xdeada1u5.csd.uoc.gr"
+  CNAME:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/gh-pages'
+    steps:
+       - name: write_CNAME
+         run: echo '0xdeada1u5.csd.uoc.gr' > 'CNAME'
