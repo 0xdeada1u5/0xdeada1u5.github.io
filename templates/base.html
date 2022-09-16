@@ -5,8 +5,8 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>{% block page_title %} {% endblock %}</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='css/bulma.min.css'>
-        <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/css/bulma.min.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
         {% block extra_css %}
         {% endblock %}
 
@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item">
-                        <img src="img/deadalus.webp" width="28" height="28">
+                        <img src="/img/deadalus.webp" width="28" height="28">
                         <h1 class="title pl-2 is-5"> 0xdeada1u5</h1>
                     </a>
                     <a role="button" class="navbar-burger mr-2" aria-label="menu" aria-expanded="false"
@@ -45,6 +45,6 @@
     </body>
     {% block extra_js %}
     {% endblock %}
-    <script src="js/fontawesome.all.min.js"></script>
-    <script src="js/nav-burger.js"></script>
+    <script src="/js/fontawesome.all.min.js"></script>
+    <script src="/js/nav-burger.js"></script>
 </html>
