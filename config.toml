@@ -1,5 +1,5 @@
 # The URL the site will be built for
-# base_url = "http://localhost:1111"
+# base_url = "http://127.0.0.1"
 base_url = "https://0xdeada1u5.csd.uoc.gr/"
 
 # Whether to automatically compile all Sass files in the sass directory
