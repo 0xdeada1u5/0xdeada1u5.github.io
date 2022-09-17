@@ -4,7 +4,7 @@ template = "team.html"
 
 [extra.dimspith]
 image = "/img/members/dimspith.webp"
-links = [{ url="https//github.com/dimspith", icon="fab fa-github" },
+links = [{ url="https://github.com/dimspith", icon="fab fa-github" },
          { url="https://dimspith.com", icon="fas fa-globe" } ]
 
 [extra.giorgosioak]
