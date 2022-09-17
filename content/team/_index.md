@@ -15,8 +15,8 @@ links = [{ url="https://github.com/giorgosioak", icon="fab fa-github" },
 
 [extra.verdic]
 image = "/img/members/verdic.webp"
-links = [{ url="https//github.com/dimspith", icon="fab fa-github" },
-         { url="https://dimspith.com", icon="fas fa-globe" } ]
+links = [{ url="https://github.com/verd1c", icon="fab fa-github" }]
+      
 
 [extra.johnarakas]
 image = "/img/members/johnarakas.webp"
