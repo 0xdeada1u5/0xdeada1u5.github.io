@@ -22,7 +22,7 @@ links = [{ url="https://github.com/verd1c", icon="fab fa-github" }]
 image = "/img/members/johnarakas.webp"
 links = [{ url="https://github.com/johnarakas", icon="fab fa-github" },
          { url="https://www.linkedin.com/in/ioannis-arakas-b598881a4/", icon="fab fa-linkedin" },
-         { url="mailto:johnarkas679@gmail.com", icon="fas fa-at" } ]
+         { url="mailto:arakas@csd.uoc.gr", icon="fas fa-at" } ]
 
 [extra.dionkal]
 image = "/img/member.webp"
@@ -43,6 +43,7 @@ links = [ { url="https://github.com/An0nSaiko", icon="fab fa-github" } ]
 
 [extra.Art3mis]
 image = "/img/members/Art3mis.webp"
+links = [{ url="https://github.com/mikegiannako", icon="fab fa-github" }]
 
 [extra.nikosboum]
 image = "/img/member.webp"
