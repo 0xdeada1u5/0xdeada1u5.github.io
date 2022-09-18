@@ -32,6 +32,7 @@ image = "/img/members/cast.webp"
 
 [extra.theo0k]
 image = "/img/member.webp"
+links = [ { url="https://github.com/theo0k", icon="fab fa-github" } ]
 
 [extra.Restricted]
 image = "/img/members/Restricted.webp"
