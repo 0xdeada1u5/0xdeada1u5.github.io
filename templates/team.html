@@ -56,7 +56,7 @@
                 <p>{{ name }}</p>
                 {% if data.links %}
                 {% for link in data.links %}
-                <a class="mx-1" href="{{ link.url }}"><i class="{{ link.icon }}"></i></a>
+                <a class="mx-1" href="{{ link.url }}" target="_blank"><i class="{{ link.icon }}"></i></a>
                 {% endfor %}                
                 {% endif %}
 
