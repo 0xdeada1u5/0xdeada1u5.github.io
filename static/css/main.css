@@ -20,3 +20,27 @@ nav a.active {
 .member-image {
     border-radius: 50% !important;
 }
+
+.events-hero .title,.subtitle {
+    color: #FFF !important;
+}
+
+.events-hero {
+    border-radius: 10px;
+    background-image: url("/img/banners/events-banner.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post .media-left {
+    border-radius: 10px;
+}
+
+.container.posts {
+    max-width: calc(750px + 8vw) !important;
+}
+
+a.post-title:hover {
+    text-decoration: underline;
+}

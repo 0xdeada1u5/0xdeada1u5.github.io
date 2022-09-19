@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block page_title %} {{ section.title }} {% endblock %}
+
+{% block navbar_elements %}
+<a class="navbar-item" href="/">
+    Home
+</a>
+<a class="navbar-item" href="/team">
+    Team
+</a>
+<a class="navbar-item" href="/participations">
+    Participations
+</a>
+<a class="active navbar-item" href="/events">
+    Events
+</a>
+<a class="navbar-item" href="/contact">
+    Contact
+</a>
+{% endblock %}
+
+{% block content %}
+<div class="container py-6 px-3">
+    <section class="events-hero hero is-medium">
+        <div class="hero-body container has-text-centered">
+            <p class="title">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-regular fa-calendar"></i>
+                    </span>
+                    <span>{{ section.title }}</span>
+                </span>
+            </p>
+            <p class="subtitle">
+                Announcements and posts about our events
+            </p>
+        </div>
+    </section>
+</div>
+
+<div class="container posts">
+    <div class="columns is-multiline is-centered">
+        {% for page in section.pages %}
+        <div class="column is-full post box is-shadowless">
+            <article class="media px-3">
+                <figure class="media-left">
+                    <p class="image is-96x96">
+                        {% if page.extra.image %}
+                        <img src="{{ page.extra.image }}">
+                        {% else %}
+                        <img src="img/posts/post.webp">
+                        {% endif %}
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                        <p class="post-data">
+                            <strong><a class="post-title has-text-black" href="{{ page.permalink | safe }}">{{ page.title }}</a></strong>
+                            <br>
+                            <strong><small class="has-text-grey post-date">{{ page.date }}</small></strong>
+                            <br>
+                            <span class="is-hidden-mobile">{{ page.extra.summary }}<br></span>
+                            <strong>
+                                <small><a class="post-title has-text-grey-dark" href="{{ page.permalink | safe }}"><i class="fa-solid fa-angle-right"></i> READ MORE</a></small>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
