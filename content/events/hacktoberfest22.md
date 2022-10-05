@@ -15,8 +15,8 @@ image = "/img/posts/hacktoberfest22/icon.webp"
 
 Θα γίνουν 2 live events για την ενημέρωση των φοιτητών.
 
-- Πέμπτη  6/10 στις 2μμ
-- Πέμπτη 20/10 στις 2μμ
+- Πέμπτη  6/10 στις 2:00-6:00μμ στην Β108 του τμήματος μας
+- Πέμπτη 20/10 (λογικά ίδια ώρα και ίδια αίθουσα, θα σας ενημερώσουμε μέσω email)
 
 ## Τι είναι το Hacktoberfest
 
@@ -27,15 +27,19 @@ image = "/img/posts/hacktoberfest22/icon.webp"
 
 ## Τι θα κερδίσετε με τη συμμετοχή σας
 
-Οι πρώτοι 40.000 συμμετέχοντες (συντηρητές και συντελεστές) που ολοκληρώνουν το Hacktoberfest μπορούν να επιλέξουν να λάβουν ένα από τα δύο βραβεία: ένα δέντρο που φυτεύτηκε στο όνομά τους ή το t-shirt Hacktoberfest 2022.
+Οι πρώτοι 40.000 συμμετέχοντες (συντηρητές και συντελεστές) που ολοκληρώνουν το **Hacktoberfest Challenge** (4 ή παραπάνω contributions) μπορούν να επιλέξουν να λάβουν ένα από τα δύο βραβεία: ένα δέντρο που φυτεύτηκε στο όνομά τους ή το t-shirt Hacktoberfest 2022.
 
 Για τους Maintainers θα υπάρξει Reward Kit. Πληροφορίες [εδώ](https://hacktoberfest.com/participation/#maintainers).
 
-Πέρα από αυτό θα μάθετε να λειτουργείτε το git, να συνεισφέρετε σε projects μέσω pull requests και θα έχετε την ευκαιρία να χτίσετε το portofolio σας 
+Πέρα από αυτό θα μάθετε να λειτουργείτε το git, να συνεισφέρετε σε projects μέσω pull requests και θα έχετε την ευκαιρία να χτίσετε το portofolio σας
 
 ## Πως χρησιμοποιώ το git
 
-Στα live event θα υπάρχουν άτομα που θα σας βοηθήσουν με το git, το Github και το GitLab.
+Το git είναι ένα ευρέως χρησιμοποιούμενο εργαλείο διαχείρισης προγραμματιστικών (και όχι μόνο) project οποιασδήποτε κλίμακας, με γρήγορο και αποτελεσματικό τρόπο. Projects που ίσως ήδη γνωρίζετε τα οποία συντηρούνται και αναπτύσσονται μέσω git περιλαμβάνουν το VScode, τον Linux και τον Android kernel.
+
+Μερικά ακόμα μικρότερα projects που θα αναφέρουμε από κοντά είναι το [turnin](https://github.com/zakkak/turnin) και το [rendezvous](https://github.com/zakkak/rendezvous/) τα οποία θα τα βρείτε σίγουρα μπροστά σας κατά τη διάρκεια των σπουδών σας εδώ.
+
+Στα live event θα υπάρχουν άτομα που θα σας βοηθήσουν με το **git**, το **Github** και το **GitLab**.
 
 Θα βρείτε εδώ χρήσιμους οδηγούς στα αγγλικά:
 - [How To Use Git: A Reference Guide](https://www.digitalocean.com/community/cheatsheets/how-to-use-git-a-reference-guide)
@@ -44,13 +48,19 @@ image = "/img/posts/hacktoberfest22/icon.webp"
 
 ## Hacktoberfest Challenge
 
+ΣΗΜΑΝΤΙΚΟ! Για να μετρήσουν οι συνεισφορές σας στο challenge θα πρέπει να έχετε κάνει εγγραφή στο [https://hacktoberfest.com/auth/](https://hacktoberfest.com/auth/)
+
 Τα Pull/Merge Requests (PR) θα πρέπει να έχουν δημιουργηθεί μεταξύ 1 και 31 Οκτωβρίου σε δημόσιο repository που έχει σαν topic `hacktoberfest`. Υπάρχει περίοδος 7 ημερών που θα γίνει έλεγχος από τους διοργανωτές για την ποιότητα των συνεισφορών. Σε περίπτωση που το PR σας θεωρηθεί spam ή invalid δεν θα μετρήσει για το βραβείο.
 
 Περισσότερες πληροφορίες θα βρείτε [εδώ](https://hacktoberfest.com/participation/#pr-mr-details).
 
+## CSD Projects
+
+Στο [Hacktoberfest-CSD - GitHub](https://github.com/0xdeada1u5/Hacktoberfest-CSD) θα βρείτε μια λίστα με τα projects από φοιτητές τους Τμήματος μας τα οποία είναι ανοιχτά για συνεισφορά στο event. Μπορείτε να προσθέσετε και το δικό σας project στη λίστα (προσοχή στο tag `hacktoberfest`), την οποία θα κάνουμε update.
+
 ## Links
 - [Official Website](https://hacktoberfest.com)
+- [Official Hacktoberfest Discord](https://discord.gg/hacktoberfest)
 - [Participation Guide](https://hacktoberfest.com/participation)
-- [Discord](https://discord.gg/hacktoberfest)
 - [Hacktoberfest Projects - GitHub](https://github.com/topics/hacktoberfest)
 - [hacktoberfest Projects - GitLab](https://gitlab.com/explore/projects?topic=hacktoberfest)
