@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block page_title %} {{ section.title }} {% endblock %}
+
+{% block navbar_elements %}
+<a class="navbar-item" href="/">
+    Home
+</a>
+<a class="navbar-item" href="/team">
+    Team
+</a>
+<a class="navbar-item" href="/participations">
+    Participations
+</a>
+<a class="navbar-item" href="/events">
+    Events
+</a>
+<a class="active navbar-item" href="/calendar">
+    Calendar
+</a>
+<a class="navbar-item" href="/contact">
+    Contact
+</a>
+{% endblock %}
+
+{% block content %}
+<div class="container py-6">
+    <div class="content has-text-centered">
+        <h3>Ημερολόγιο</h3>
+        <p>Εδώ θα βρείτε όλα τα events που διοργανώνει η ομάδα. Προσθέστε το calendar για να μείνετε συντονισμένοι.</p>
+    </div>
+    <div class="hero-body container has-text-centered">
+        <iframe
+            src="https://calendar.google.com/calendar/embed?src=7c161490b0ae3d556017d17c57f90deb8e47be83c628ff1a9d3bec0cc94c5b92%40group.calendar.google.com"
+            style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+        </iframe>
+    </div>
+</div>
+{% endblock %}
