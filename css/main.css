@@ -1,0 +1,46 @@
+nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+nav a.active {
+    color: #000 !important;
+    font-weight: bold;
+    box-shadow: 0 -2px 0 #000 inset;
+    font-family: var(--zf-primary-semibold), Arial, Helvetica, sans-serif;
+}
+
+
+.member-list .card {
+    transition: transform .2s;
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--transparent-color);
+}
+.member-image {
+    border-radius: 50% !important;
+}
+
+.events-hero .title, .events-hero .subtitle {
+    color: #FFF !important;
+}
+
+.events-hero {
+    border-radius: 10px;
+    background-image: url("/img/banners/events-banner.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post .media-left {
+    border-radius: 10px;
+}
+
+.container.posts {
+    max-width: calc(750px + 8vw) !important;
+}
+
+a.post-title:hover {
+    text-decoration: underline;
+}

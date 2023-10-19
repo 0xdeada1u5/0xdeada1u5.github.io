@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://0xdeada1u5.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://0xdeada1u5.github.io/calendar/</loc>
+    </url>
+    <url>
+        <loc>https://0xdeada1u5.github.io/contact/</loc>
+    </url>
+    <url>
+        <loc>https://0xdeada1u5.github.io/events/</loc>
+    </url>
+    <url>
+        <loc>https://0xdeada1u5.github.io/events/hacktoberfest22/</loc>
+        <lastmod>2022-09-20</lastmod>
+    </url>
+    <url>
+        <loc>https://0xdeada1u5.github.io/events/hashcode23/</loc>
+        <lastmod>2023-04-13</lastmod>
+    </url>
+    <url>
+        <loc>https://0xdeada1u5.github.io/participations/</loc>
+    </url>
+    <url>
+        <loc>https://0xdeada1u5.github.io/team/</loc>
+    </url>
+</urlset>
