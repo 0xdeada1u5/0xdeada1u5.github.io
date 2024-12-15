@@ -25,4 +25,4 @@ jobs:
           branch: gh-pages
           folder: public
           clean: true
-          commit-message: "0xdeada1u5.csd.uoc.gr deployment at $(date +'%Y-%m-%d %H:%M:%S %Z')"
+          commit-message: "0xdeada1u5.csd.uoc.gr automatic deployment"
