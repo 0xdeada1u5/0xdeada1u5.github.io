@@ -23,7 +23,6 @@
 </a>
 {% endblock %}
 
-
 {% block content %}
 <div class="container py-6">
     <h1 class="title has-text-centered">Συντονιστές Καθηγητές</h1>
@@ -49,26 +48,92 @@
             </div>
         </div>
     </div>
+
     <h1 class="title has-text-centered">Η ομάδα</h1>
-    <div class="columns is-multiline is-mobile is-centered is-3 member-list">
-        {% for name, data in section.extra %}
+    {% set leads = section.extra.team_leads | default(value=[]) %}
+    {% set members = section.extra.team_members | default(value=[]) %}
+    {% set veterans = section.extra.veterans | default(value=[]) %}
+
+    {% if leads | length > 0 %}
+    <div class="columns is-mobile is-centered is-3 member-list">
+        {% for member in leads %}
         <div
             class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
             <div class="card-image">
-                <figure class="image is-96x96 mx-auto"><img class="member-image"
-                                                            src={{ data.image }}></figure>
+                <figure class="image is-96x96 mx-auto"><img class="member-image" src="{{ member.image }}"></figure>
             </div>
             <div class="media-content">
-                <p>{{ name }}</p>
-                {% if data.links %}
-                {% for link in data.links %}
-                <a class="mx-1" href="{{ link.url }}" target="_blank"><i class="{{ link.icon }}"></i></a>
-                {% endfor %}                
+                <p>{{ member.name }}</p>
+                {% if member.links %}
+                {% for link in member.links %}
+                <a class="mx-1" href="{{ link.url }}" target="_blank">
+                    {% if link.icon_image %}
+                    <img src="{{ link.icon_image }}" alt="" style="width:1.1em;height:1.1em;vertical-align:-0.1em;">
+                    {% else %}
+                    <i class="{{ link.icon }}"></i>
+                    {% endif %}
+                </a>
+                {% endfor %}
                 {% endif %}
-
             </div>
         </div>
         {% endfor %}
     </div>
+    {% endif %}
+
+    {% if members | length > 0 %}
+    <div class="columns is-multiline is-mobile is-centered is-3 member-list">
+        {% for member in members %}
+        <div
+            class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
+            <div class="card-image">
+                <figure class="image is-96x96 mx-auto"><img class="member-image" src="{{ member.image }}"></figure>
+            </div>
+            <div class="media-content">
+                <p>{{ member.name }}</p>
+                {% if member.links %}
+                {% for link in member.links %}
+                <a class="mx-1" href="{{ link.url }}" target="_blank">
+                    {% if link.icon_image %}
+                    <img src="{{ link.icon_image }}" alt="" style="width:1.1em;height:1.1em;vertical-align:-0.1em;">
+                    {% else %}
+                    <i class="{{ link.icon }}"></i>
+                    {% endif %}
+                </a>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if veterans | length > 0 %}
+    <h1 class="title has-text-centered">Veterans</h1>
+    <div class="columns is-multiline is-mobile is-centered is-3 member-list">
+        {% for member in veterans %}
+        <div
+            class="card column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd is-shadowless has-text-centered">
+            <div class="card-image">
+                <figure class="image is-96x96 mx-auto"><img class="member-image" src="{{ member.image }}"></figure>
+            </div>
+            <div class="media-content">
+                <p>{{ member.name }}</p>
+                {% if member.links %}
+                {% for link in member.links %}
+                <a class="mx-1" href="{{ link.url }}" target="_blank">
+                    {% if link.icon_image %}
+                    <img src="{{ link.icon_image }}" alt="" style="width:1.1em;height:1.1em;vertical-align:-0.1em;">
+                    {% else %}
+                    <i class="{{ link.icon }}"></i>
+                    {% endif %}
+                </a>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 </div>
 {% endblock %}
