@@ -22,7 +22,7 @@ image = "https://media.licdn.com/dms/image/v2/D4D03AQETzEUhnUBfcQ/profile-displa
 links = [ { url="https://www.linkedin.com/in/alexandros-fourtounis", icon="fab fa-linkedin" } ]
 
 [[extra.team_members]]
-name = "PantelisTs"
+name = "pantelis3"
 image = "https://media.licdn.com/dms/image/v2/D5603AQHmeh7KXiRFKQ/profile-displayphoto-scale_400_400/B56ZkPHaNIHkAk-/0/1756895226585?e=1767830400&v=beta&t=gGoTVHI9j2ePt0kaMqUmaabd8PDNVnyzvq2_xVE9D20"
 links = [ { url="https://www.linkedin.com/in/ptsagkarakis/", icon="fab fa-linkedin" } ]
 
