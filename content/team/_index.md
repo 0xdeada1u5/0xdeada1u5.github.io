@@ -18,18 +18,27 @@ links = [
 
 [[extra.team_members]]
 name = "afourtoun"
-image = "https://media.licdn.com/dms/image/v2/D4D03AQETzEUhnUBfcQ/profile-displayphoto-scale_400_400/B4DZhTBPZZHAAg-/0/1753739492728?e=1767830400&v=beta&t=cZQpD7X-zAwjP_O5b1ok33IH6mIEaefwoLEwjlySsA4"
+image = "/img/members/alexandros.jpeg"
 links = [ { url="https://www.linkedin.com/in/alexandros-fourtounis", icon="fab fa-linkedin" } ]
 
 [[extra.team_members]]
 name = "pantelis3"
-image = "https://media.licdn.com/dms/image/v2/D5603AQHmeh7KXiRFKQ/profile-displayphoto-scale_400_400/B56ZkPHaNIHkAk-/0/1756895226585?e=1767830400&v=beta&t=gGoTVHI9j2ePt0kaMqUmaabd8PDNVnyzvq2_xVE9D20"
+image = "/img/members/pantelis3.jpg"
 links = [ { url="https://www.linkedin.com/in/ptsagkarakis/", icon="fab fa-linkedin" } ]
 
 [[extra.team_members]]
 name = "amakridou"
-image = "https://media.licdn.com/dms/image/v2/D4D03AQHKvcpfhG60Gw/profile-displayphoto-scale_400_400/B4DZhIPBPEGQAg-/0/1753558554930?e=1767830400&v=beta&t=HBX0RWf9HST0UsW2vHeI1gcvMwPF51UqJumsrF3JMWM"
+image = "/img/members/anna.jpeg"
 links = [ { url="https://www.linkedin.com/in/anna-makridou", icon="fab fa-linkedin" } ]
+
+[[extra.team_members]]
+name = "mihokar"
+image = "/img/members/mihokar.jpg"
+
+[[extra.team_members]]
+name = "7A24"
+image = "/img/members/7A24.png"
+links = [ { url="https://linkedin.com/in/ilias-giakoumakis-106580397/", icon="fab fa-linkedin" } ]
 
 [[extra.team_members]]
 name = "More are going to be added soon..."

@@ -1,1 +1,3 @@
 public/
+.zola-serve*.log
+credentials.helper
